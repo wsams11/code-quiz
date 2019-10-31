@@ -1,58 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+​
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css">
+    <title>NBA Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/nba.css">
 </head>
+​
 <body>
-    <div class="container">
-
-        <div class="header">
-
-            <div class="row justify-content-between">
-
-                <div class="col-3" id="highscore">
-                    highscore
-
-                </div>
-                
-                <div class="col-2" id="time">
-                    timer
-                </div>
-
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 image">
+                <img src="assets/images/nba.jpg" alt="film reel image">
+            </div>
+            <div class="col-md-2">
+                <div id="counter">75</div>
             </div>
         </div>
-
-        <div class="body" id="start-prompt">
-
-            <div class="row justify-content-center">
-            <h1> Code Quiz Challenge </h1>
+        <h1>NBA Quiz</h1>
+        <h3 id="scoreTitle" style="display:none">High Scores</h3>
+        <ul class="list-group" id="highscore-list"></ul>
+        <h3 id="question">Can you beat the clock?</h3>
+        <ul id="question-list"></ul>
+        <div class="buttons">
+            <button class="btn" id="start-btn">
+                Start
+            </button>
+            <button class="btn" id="high-scores-btn">
+                High Scores
+            </button>
+            <div class="form-group">
+                <input class="form-control" type="text" id="highScoreInput" placeholder="Enter Name"
+                    style="display:none">
+                <button class="btn" id="submit" style="display:none">
+                    Submit Score
+                </button>
             </div>
-
-            <div class="row justify-content-center">
-                <div class="col-8">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, reprehenderit eaque nam cum, consectetur facilis numquam magnam repudiandae, impedit quaerat nemo! Voluptates numquam, enim aut saepe ipsum deleniti dolorum deserunt!Hic natus perspiciatis repellat, quis consequatur quisquam cupiditate dignissimos velit ipsum voluptates ullam asperiores explicabo iusto, error beatae facilis sequi. Quidem quos optio rem placeat ducimus pariatur cumque voluptas minus.</p>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                    <button type="button" class="btn btn-primary btn-lg" id="button">Start Quiz!</button>
-            </div>
-
         </div>
-        <div id="quiz" class="d-none">
-            <h1 id="question">Testing</h1>
-            <div id="answers"></div>
-        </div>
-        
-  
-        <script src="assets/app.js"></script>
-
     </div>
-
-  
+​
+<script src="assets/js/nba.js"></script>
+</body>
+​
 </html>
